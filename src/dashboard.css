@@ -1,0 +1,234 @@
+/* Centrer le contenu */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Section input : toujours sous le header */
+.input-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* Gestion des catégories */
+.category-management {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-management input {
+    padding: 10px;
+    border: 1px solid #3d3939;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+}
+
+.category-management button {
+    background: transparent;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid #3d3939;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.category-management button:hover {
+    background: #a177a2;
+}
+
+/* Liste des catégories */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    background: rgba(20, 18, 18, 0.2);
+    padding: 10px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.category-item button {
+    background: #cc525e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.category-item button:hover {
+    background: #a71d2a;
+}
+
+/* Gérer les images pour éviter qu'elles cassent la mise en page */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Style de l'input pour uploader une image */
+.file-input {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3d3939;
+    background-color: #ebcbc0;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section contenant les images */
+.image-item {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.image-item img {
+    max-width: 45%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: rgba(20, 18, 18, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+.image-item input {
+    display: block;
+    margin: 5px auto 10px auto; 
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 180px;
+    margin-bottom: 10px;
+}
+
+.filter{
+    margin-right: 20px;
+}
+
+.filter-button{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.images-name{
+    background-color: transparent;
+    max-width: 20px;
+}
+
+.image-item button {
+    padding: 10px;
+    margin-left: 30px;
+    background-color: #476483;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 80px;
+}
+
+.image-item button:hover {
+    background-color: #588ac0;
+}
+
+/* Médias Queries pour un design responsive */
+
+/* Pour les téléphones (écrans de moins de 600px) */
+@media (max-width: 600px) {
+    .input-section {
+        margin-top: 1040%;
+    }
+
+    .file-input {
+        padding: 8px;
+    }
+
+    .image-item {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .image-item img {
+        width: 100%;
+    }
+
+    .image-item input,
+    .image-item button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Pour les tablettes (écrans entre 600px et 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .input-section {
+        margin-top: 200%;
+    }
+
+    .file-input {
+        padding: 9px;
+    }
+
+    .image-item {
+        width: 48%;
+        margin-right: 2%;
+    }
+
+    .image-item img {
+        width: 100%;
+    }
+
+    .image-item input,
+    .image-item button {
+        width: 100%;
+    }
+}
+
+/* Pour les ordinateurs (écrans plus larges que 1024px) */
+@media (min-width: 1025px) {
+    .image-item {
+        width: 30%;
+        margin-right: 2%;
+    }
+
+    .image-item img {
+        width: 100%;
+    }
+
+    .image-item input,
+    .image-item button {
+        width: 100%;
+    }
+}
