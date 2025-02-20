@@ -1,0 +1,24 @@
+.footer {
+    background: transparent;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3), 0 20px 50px rgba(0, 0, 0, 0.2);
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social-links {
+    margin-top: 5px;
+}
+
+.footer .social-links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #ff4500;
+}
